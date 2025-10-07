@@ -56,6 +56,12 @@ To run tests simply run the
     docker compose exec php php artisan test
 ```
 
+Seeder automatically creates a test user with the following credentials: 
+
+| Email            | Password |
+|------------------|----------|
+| test@example.com | password |
+
 Everything is set up! Access the app at http://localhost:8080
 
 
