@@ -42,7 +42,7 @@ class PostController extends Controller
         $comments = $post->comments()
             ->with(['user' => fn($query) => $query->select('id', 'name')])
             ->latest()
-            ->paginate(2);
+            ->paginate(10);
 
         return view('posts.show', compact('post', 'comments'));
     }
