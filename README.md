@@ -1,3 +1,15 @@
+## Requirements
+
+| Software | Version |
+|----------|---------|
+| PHP      | 8.4     |
+| MySQL    | 8.0     |
+| NodeJS   | 24      |
+
+## Installation
+
+In case of not wanting to use docker, skip to step 3 and use commands without docker compose container prefixes.
+
 ### Step 1 .env setup
 
 copy .env.example to .env in the main directory & web directory, first one is required for docker setup and the second
@@ -25,7 +37,7 @@ Install dependencies (In case of having different php container name change `doc
   docker compose exec php composer install
   docker compose exec php php artisan key:generate
   
-  # Optionaly add --seed flag or run artisan db:seed
+  # Optionally add --seed flag or run artisan db:seed
   docker compose exec php php artisan migrate
 ```
 
