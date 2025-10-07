@@ -109,7 +109,7 @@
                 <h3>No comments yet</h3>
             @endforelse
 
-
+            {!! $comments->links() !!}
         </div>
     </section>
 
